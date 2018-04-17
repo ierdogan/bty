@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="btydbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="CODE" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="NAME" Type="nchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Document">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="CODE" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="NAME" Type="nchar" MaxLength="100" />
+    <Property Name="DOCUMENT_DATE" Type="datetime" Nullable="false" />
+    <Property Name="DOCUMENT_TYPE" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="CODE" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="NAME" Type="nchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Transaction">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="ACCOUNT_ID" Type="bigint" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="bigint" Nullable="false" />
+    <Property Name="TRANSACTION_DATE" Type="datetime" Nullable="false" />
+    <Property Name="TRANSACTION_TYPE" Type="bigint" Nullable="false" />
+    <Property Name="DIRECTION" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="btydbModelStoreContainer">
+    <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Document" EntityType="Self.Document" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Transaction" EntityType="Self.Transaction" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="btydbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" />
+    <Property Name="CODE" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Document">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" />
+    <Property Name="CODE" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="DOCUMENT_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DOCUMENT_TYPE" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" />
+    <Property Name="CODE" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Transaction">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" />
+    <Property Name="ACCOUNT_ID" Type="Int64" Nullable="false" />
+    <Property Name="PRODUCT_ID" Type="Int64" Nullable="false" />
+    <Property Name="TRANSACTION_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TRANSACTION_TYPE" Type="Int64" Nullable="false" />
+    <Property Name="DIRECTION" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="btydbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Account" EntityType="Self.Account" />
+    <EntitySet Name="Document" EntityType="Self.Document" />
+    <EntitySet Name="Product" EntityType="Self.Product" />
+    <EntitySet Name="Transaction" EntityType="Self.Transaction" />
+  </EntityContainer>
+</Schema>

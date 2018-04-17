@@ -1,0 +1,6 @@
+C:\prj\bty\BtyIntegrations\bin\Debug\BtyIntegrations.dll.config
+C:\prj\bty\BtyIntegrations\bin\Debug\BtyIntegrations.dll
+C:\prj\bty\BtyIntegrations\bin\Debug\BtyIntegrations.pdb
+C:\prj\bty\BtyIntegrations\obj\Debug\BtyIntegrations.csprojResolveAssemblyReference.cache
+C:\prj\bty\BtyIntegrations\obj\Debug\BtyIntegrations.dll
+C:\prj\bty\BtyIntegrations\obj\Debug\BtyIntegrations.pdb

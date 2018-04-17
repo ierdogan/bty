@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLibrary", "EntityLibrary\EntityLibrary.csproj", "{B207AD56-3220-4B21-91C0-D67EB533A228}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BtyServiceApp", "BtyServiceApp\BtyServiceApp.csproj", "{BD2B91F7-D7F6-4CAB-A2DD-9B1E7666F295}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BtyLibrary", "BtyLibrary\BtyLibrary.csproj", "{E10E08EB-CE9E-491E-92C3-9ACEDF810414}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serene1.Web", "Serene1\Serene1.Web\Serene1.Web.csproj", "{E298DC33-D240-4585-AC47-775575246780}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BtyIntegrations", "BtyIntegrations\BtyIntegrations.csproj", "{BBE75391-0EE6-4633-AA35-CC45D8665300}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BtyDesktopApp", "BtyDesktopApp\BtyDesktopApp\BtyDesktopApp.csproj", "{EBA6C3CE-59EC-44EE-B513-39A8E99EA93A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B207AD56-3220-4B21-91C0-D67EB533A228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B207AD56-3220-4B21-91C0-D67EB533A228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B207AD56-3220-4B21-91C0-D67EB533A228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B207AD56-3220-4B21-91C0-D67EB533A228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD2B91F7-D7F6-4CAB-A2DD-9B1E7666F295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD2B91F7-D7F6-4CAB-A2DD-9B1E7666F295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD2B91F7-D7F6-4CAB-A2DD-9B1E7666F295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD2B91F7-D7F6-4CAB-A2DD-9B1E7666F295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E10E08EB-CE9E-491E-92C3-9ACEDF810414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E10E08EB-CE9E-491E-92C3-9ACEDF810414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E10E08EB-CE9E-491E-92C3-9ACEDF810414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E10E08EB-CE9E-491E-92C3-9ACEDF810414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E298DC33-D240-4585-AC47-775575246780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E298DC33-D240-4585-AC47-775575246780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E298DC33-D240-4585-AC47-775575246780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E298DC33-D240-4585-AC47-775575246780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBE75391-0EE6-4633-AA35-CC45D8665300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE75391-0EE6-4633-AA35-CC45D8665300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE75391-0EE6-4633-AA35-CC45D8665300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE75391-0EE6-4633-AA35-CC45D8665300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA6C3CE-59EC-44EE-B513-39A8E99EA93A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA6C3CE-59EC-44EE-B513-39A8E99EA93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA6C3CE-59EC-44EE-B513-39A8E99EA93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA6C3CE-59EC-44EE-B513-39A8E99EA93A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
