@@ -58,6 +58,3 @@ C:\prj\bty\BtyDesktopApp\BtyDesktopApp\obj\Debug\BtyDesktopApp.csproj.GenerateRe
 C:\prj\bty\BtyDesktopApp\BtyDesktopApp\obj\Debug\BtyDesktopApp.exe.licenses
 C:\prj\bty\BtyDesktopApp\BtyDesktopApp\obj\Debug\BtyDesktopApp.exe
 C:\prj\bty\BtyDesktopApp\BtyDesktopApp\obj\Debug\BtyDesktopApp.pdb
-C:\prj\bty\bty\BtyDesktopApp\BtyDesktopApp\bin\Debug\BtyDesktopApp.exe.config
-C:\prj\bty\bty\BtyDesktopApp\BtyDesktopApp\obj\Debug\BtyDesktopApp.exe
-C:\prj\bty\bty\BtyDesktopApp\BtyDesktopApp\obj\Debug\BtyDesktopApp.pdb

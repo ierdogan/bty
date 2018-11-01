@@ -33,7 +33,7 @@ namespace BtyDesktopApp
         {
             n11Service n11 = new n11Service();
             List<SubCategoryData>  sbc = n11.GetSubCategories(Convert.ToInt64(edsc.Text));
-            foreach (SubCategory sc in sbc.)
+            //foreach (SubCategory sc in sbc)
             pgc1.DataSource = (from p in sbc select p.subCategoryList);
             pgc1.RetrieveFields();
         }
