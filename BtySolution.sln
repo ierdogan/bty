@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BtyServiceApp", "BtyServiceApp\BtyServiceApp.csproj", "{BD2B91F7-D7F6-4CAB-A2DD-9B1E7666F295}"
 EndProject
