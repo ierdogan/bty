@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EntityLibrary;
+using BtyEntityLibrary;
 
 namespace BtyLibrary
 {
     public abstract class BaseDbController
     {
-        public btydbEntities bde;
+        public zdbEntities bde;
     
 
         public BaseDbController()
         {
-            bde = new btydbEntities();
+            bde = new zdbEntities();
         }
 
     }

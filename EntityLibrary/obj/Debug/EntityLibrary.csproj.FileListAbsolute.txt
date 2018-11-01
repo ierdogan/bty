@@ -18,3 +18,13 @@ C:\prj\bty\EntityLibrary\bin\Debug\EntityFramework.SqlServer.xml
 C:\prj\bty\EntityLibrary\obj\Debug\EntityLibrary.csprojResolveAssemblyReference.cache
 C:\prj\bty\EntityLibrary\obj\Debug\EntityLibrary.dll
 C:\prj\bty\EntityLibrary\obj\Debug\EntityLibrary.pdb
+C:\prj\bty\bty\EntityLibrary\bin\Debug\EntityLibrary.dll.config
+C:\prj\bty\bty\EntityLibrary\bin\Debug\EntityLibrary.dll
+C:\prj\bty\bty\EntityLibrary\bin\Debug\EntityLibrary.pdb
+C:\prj\bty\bty\EntityLibrary\bin\Debug\EntityFramework.dll
+C:\prj\bty\bty\EntityLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\prj\bty\bty\EntityLibrary\bin\Debug\EntityFramework.xml
+C:\prj\bty\bty\EntityLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\prj\bty\bty\EntityLibrary\obj\Debug\EntityLibrary.csprojResolveAssemblyReference.cache
+C:\prj\bty\bty\EntityLibrary\obj\Debug\EntityLibrary.dll
+C:\prj\bty\bty\EntityLibrary\obj\Debug\EntityLibrary.pdb

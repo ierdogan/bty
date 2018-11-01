@@ -16,7 +16,7 @@ namespace BtyDesktopApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new n11IntegrationForm());
+            Application.Run(new Main());
         }
     }
 }

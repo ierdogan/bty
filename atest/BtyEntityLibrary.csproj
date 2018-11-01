@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{402AD745-D711-43C3-81BD-0AE0B0B9BF43}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BtyEntityLibrary</RootNamespace>
+    <AssemblyName>BtyEntityLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.5.1\lib\net45\Google.Protobuf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.10\Assemblies\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.10\Assemblies\v4.5\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BtyModelz.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BtyModelz.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BtyModelz.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BtyModelz.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BtyModelz.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="BtyEntityLibrary.cs" />
+    <Compile Include="oc_address.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_api.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_api_ip.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_api_session.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_attribute.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_attribute_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_attribute_group.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_attribute_group_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_banner.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_banner_image.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_cart.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_category.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_category_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_category_filter.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_category_path.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_category_to_layout.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_category_to_store.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_country.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_coupon.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_coupon_category.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_coupon_history.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_coupon_product.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_currency.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_customer.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_customer_activity.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_customer_affiliate.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_customer_approval.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_customer_group.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_customer_group_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_customer_history.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_customer_ip.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_customer_login.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_customer_online.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_customer_reward.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_customer_search.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_customer_transaction.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_customer_wishlist.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_custom_field.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_custom_field_customer_group.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_custom_field_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_custom_field_value.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_custom_field_value_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_download.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_download_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_event.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_extension.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_extension_install.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_extension_path.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_filter.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_filter_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_filter_group.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_filter_group_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_geo_zone.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_google_base_category.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_google_base_category_to_category.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_information.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_information_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_information_to_layout.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_information_to_store.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_journal2_blog_category.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_journal2_blog_category_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_journal2_blog_category_to_layout.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_journal2_blog_comments.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_journal2_blog_post.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_journal2_blog_post_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_journal2_blog_post_to_category.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_journal2_blog_post_to_layout.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_journal2_blog_post_to_product.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_journal2_config.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_journal2_modules.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_journal2_settings.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_journal2_skins.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_language.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_layout.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_layout_module.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_layout_route.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_length_class.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_length_class_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_location.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_manufacturer.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_manufacturer_to_store.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_marketing.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_modification.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_module.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_option.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_option_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_option_value.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_option_value_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_order.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_order_history.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_order_option.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_order_product.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_order_recurring.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_order_recurring_transaction.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_order_shipment.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_order_status.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_order_total.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_order_voucher.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_product.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_product_attribute.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_product_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_product_discount.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_product_filter.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_product_image.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_product_option.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_product_option_value.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_product_recurring.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_product_related.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_product_reward.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_product_special.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_product_to_category.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_product_to_download.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_product_to_layout.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_product_to_store.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_recurring.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_recurring_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_return.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_return_action.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_return_history.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_return_reason.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_return_status.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_review.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_seo_url.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_session.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_setting.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_shipping_courier.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_statistics.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_stock_status.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_store.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_tax_class.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_tax_rate.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_tax_rate_to_customer_group.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_tax_rule.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_theme.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_translation.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_upload.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_user.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_user_group.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_voucher.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_voucher_history.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_voucher_theme.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_voucher_theme_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_weight_class.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_weight_class_description.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_zone.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="oc_zone_to_geo_zone.cs">
+      <DependentUpon>BtyModelz.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="BtyModelz.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BtyModelz.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="BtyModelz.edmx.diagram">
+      <DependentUpon>BtyModelz.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BtyModelz.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BtyModelz.edmx</DependentUpon>
+      <LastGenOutput>BtyModelz.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="BtyModelz.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BtyModelz.edmx</DependentUpon>
+      <LastGenOutput>BtyModelz.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

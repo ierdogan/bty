@@ -1,0 +1,14 @@
+C:\prj\bty\bty\ClassLibrary1\bin\Debug\ClassLibrary1.dll.config
+C:\prj\bty\bty\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\prj\bty\bty\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\prj\bty\bty\ClassLibrary1\bin\Debug\EntityFramework.dll
+C:\prj\bty\bty\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.dll
+C:\prj\bty\bty\ClassLibrary1\bin\Debug\MySql.Data.dll
+C:\prj\bty\bty\ClassLibrary1\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\prj\bty\bty\ClassLibrary1\bin\Debug\EntityFramework.xml
+C:\prj\bty\bty\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.xml
+C:\prj\bty\bty\ClassLibrary1\bin\Debug\MySql.Data.xml
+C:\prj\bty\bty\ClassLibrary1\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\prj\bty\bty\ClassLibrary1\obj\Debug\ClassLibrary1.csprojResolveAssemblyReference.cache
+C:\prj\bty\bty\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\prj\bty\bty\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
