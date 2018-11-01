@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BtyServiceApp", "BtyService
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BtyLibrary", "BtyLibrary\BtyLibrary.csproj", "{E10E08EB-CE9E-491E-92C3-9ACEDF810414}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serene1.Web", "Serene1\Serene1.Web\Serene1.Web.csproj", "{E298DC33-D240-4585-AC47-775575246780}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BtyIntegrations", "BtyIntegrations\BtyIntegrations.csproj", "{BBE75391-0EE6-4633-AA35-CC45D8665300}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BtyDesktopApp", "BtyDesktopApp\BtyDesktopApp\BtyDesktopApp.csproj", "{EBA6C3CE-59EC-44EE-B513-39A8E99EA93A}"
@@ -33,10 +31,6 @@ Global
 		{E10E08EB-CE9E-491E-92C3-9ACEDF810414}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E10E08EB-CE9E-491E-92C3-9ACEDF810414}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E10E08EB-CE9E-491E-92C3-9ACEDF810414}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E298DC33-D240-4585-AC47-775575246780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E298DC33-D240-4585-AC47-775575246780}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E298DC33-D240-4585-AC47-775575246780}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E298DC33-D240-4585-AC47-775575246780}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BBE75391-0EE6-4633-AA35-CC45D8665300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BBE75391-0EE6-4633-AA35-CC45D8665300}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBE75391-0EE6-4633-AA35-CC45D8665300}.Release|Any CPU.ActiveCfg = Release|Any CPU
